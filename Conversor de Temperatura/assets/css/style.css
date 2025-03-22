@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --branco:#fff;
+    --preto:#000;
+    --celsius:#00c7b6;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    height: 50%;
+    border: 0.2rem solid var(--celsius);
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s ease-in-out;
+}
+
+.conversor {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    color: var(--celsius);
+}
+
+form button {
+    width: 12rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: var(--celsius);
+    color: var(--branco);
+    outline: none;
+    border: 0.2rem solid var(--celsius);
+    border-radius: 2rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+form button:active {
+    background-color: var(--branco);
+    color: var(--celsius);
+}
+
+.temperaturaInicial {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperaturaInicial input {
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+    border: 0.1rem solid var(--preto);
+}
+
+.temperaturaInicial select {
+    height: 2.2rem;
+    border: 0.1rem solid var(--preto);
+    outline: none;
+}
+
+#opcoes2 {
+    height: 2.2rem;
+    border: 0.1rem solid var(--preto);
+    outline: none;
+}
+
+.display {
+    width: 50%;
+    height: 100%;
+    background-color: var(--celsius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    color: var(--branco);
+    transition: 0.6s ease-in-out;
+}
+
+@media(max-width: 900px){
+    .container {
+        width: 86%;
+    }
+}
+
+@media(max-width: 590px){
+    .display {
+        width: 100%;
+        height: 50%;
+        font-size: 5rem;
+    }
+
+    .container {
+        width: 90%;
+        height: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .conversor {
+        width: 70%;
+    }
+}

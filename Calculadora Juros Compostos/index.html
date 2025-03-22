@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="jurosCompostosTitulo" id="jurosCompostosTitulo">
+            <h1>Simulador de Juros Compostos</h1>
+        </div>
+        <form action="#" method="get">
+            <div class="inputs1" id="inputs1">
+                <div class="valorInicial" id="valorInicial">
+                    <label for="inputValorInicial">[R$] Valor inicial</label>
+                    <input type="number" placeholder="00,00" name="inputValorInicial" id="inputValorInicial">
+                </div>
+                <div class="valorMensal" id="valorMensal">
+                    <label>[R$] Valor mensal</label>
+                    <input type="number" placeholder="00,00" name="inputValorMensal" id="inputValorMensal">
+                </div>
+            </div>
+            <div class="inputs2" id="inputs2">
+                <div class="taxaJuros" id="taxaJuros">
+                    <label>Taxa de Juros [% anual]</label>
+                    <input type="number" placeholder="% anual" name="inputTaxaJuros" id="inputTaxaJuros">
+                </div>
+                <div class="periodo" id="periodo">
+                    <label>Período [ano(s)]</label>
+                    <input type="number" placeholder="ano(s)" name="inputPeriodo" id="inputPeriodo">
+                </div>
+            </div>
+            <div class="resultado" id="resultado">
+                <p id="displayResultado"></p>
+            </div>
+            <div class="botoes" id="botoes">
+                <button type="button" id="calcular">Calcular</button>
+                <button type="reset" id="limpar">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
