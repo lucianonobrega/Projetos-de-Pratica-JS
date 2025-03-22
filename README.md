@@ -14,7 +14,7 @@ Um contador interativo que permite aumentar, diminuir e resetar o valor.
 
 ## 🌡️ Conversor de Temperatura
 
-Converte valores entre Celsius, Fahrenheit e Kelvin.
+Converte valores entre Celsius, Fahrenheit e Kelvin.<br>
 ![Conversor de Temperatura](Imagens%20dos%20Projetos/ConversorDeTemperatura.PNG)
 
 
